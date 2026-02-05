@@ -4,47 +4,47 @@ This project explores machine learning–based stock price movement prediction f
 
 The goal is not to predict exact prices, but to classify future price direction based on historical market data and engineered features.
 
-# # Dataset
+ # Dataset
 
-Source: Historical Tesla (TSLA) stock data
+*Source: Historical Tesla (TSLA) stock data
 
-Features may include:
+*Features may include:
 
-Open, High, Low, Close prices
+*Open, High, Low, Close prices
 
-Volume
+*Volume
 
-Technical indicators (if engineered)
+*Technical indicators (if engineered)
 
 * Target variable:
 
 Binary label indicating price movement (Up / Down)
 
 
-# # Workflow
+# Workflow
 
-Data collection and preprocessing
+*Data collection and preprocessing
 
-Feature engineering and scaling
+*Feature engineering and scaling
 
-Train-test split
+*Train-test split
 
-Model training (Logistic Regression & SVC)
+*Model training (Logistic Regression & SVC)
 
-Model evaluation and comparison
+*Model evaluation and comparison
 
-# # Evaluation Metrics
+ # Evaluation Metrics
 
-Models are evaluated using standard classification metrics:
+*Models are evaluated using standard classification metrics:
 
-Accuracy
+*Accuracy
 
-Precision
+*Precision
 
-Recall
+*Recall
 
-F1-score
+*F1-score
 
-Confusion Matrix
+*Confusion Matrix
 
 These metrics help assess not only correctness, but also class imbalance behavior.
