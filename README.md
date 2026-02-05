@@ -1,50 +1,19 @@
-# Tesla Stock Price Prediction Using SVC and Logistic Regression
+# Model Evaluation
 
-This project explores machine learning–based stock price movement prediction for Tesla (TSLA) using two classical classification models: Support Vector Classifier (SVC) and Logistic Regression.
+We tested three machine learning classifiers for predicting Tesla stock price movement:
 
-The goal is not to predict exact prices, but to classify future price direction based on historical market data and engineered features.
+* Logistic Regression – simple linear baseline
 
- # Dataset
+* Support Vector Classifier (SVC) – nonlinear decision boundaries using a polynomial kernel
 
-*Source: Historical Tesla (TSLA) stock data
+* XGBoost Classifier (XGBClassifier) – gradient-boosted trees for capturing complex patterns
 
-*Features may include:
+# Workflow:
 
-*Open, High, Low, Close prices
+* Models were trained on historical Tesla stock data features.
 
-*Volume
+* Predictions were evaluated using ROC-AUC, which measures how well the model distinguishes upward vs downward price movements.
 
-*Technical indicators (if engineered)
+* Training and validation ROC-AUC scores were recorded to check for overfitting.
 
-* Target variable:
-
-Binary label indicating price movement (Up / Down)
-
-
-# Workflow
-
-*Data collection and preprocessing
-
-*Feature engineering and scaling
-
-*Train-test split
-
-*Model training (Logistic Regression & SVC)
-
-*Model evaluation and comparison
-
- # Evaluation Metrics
-
-*Models are evaluated using standard classification metrics:
-
-*Accuracy
-
-*Precision
-
-*Recall
-
-*F1-score
-
-*Confusion Matrix
-
-These metrics help assess not only correctness, but also class imbalance behavior.
+* The confusion matrix was plotted for Logistic Regression to visualize correct and incorrect predictions.
